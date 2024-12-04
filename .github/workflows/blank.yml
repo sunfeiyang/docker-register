@@ -27,5 +27,5 @@ jobs:
         
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://onlyoffice/documentserver:8.2.1.1 docker://crpi-9t7h1844zav55mmk.cn-beijing.personal.cr.aliyuncs.com/sunfy/onlyoffice-documentserver:8.2.1.1
+         skopeo copy docker://kuaifan/fileview:4.2.0-SNAPSHOT-RC25 docker://crpi-9t7h1844zav55mmk.cn-beijing.personal.cr.aliyuncs.com/sunfy/kuaifan-fileview:4.2.0-SNAPSHOT-RC25
       # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称
