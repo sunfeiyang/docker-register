@@ -27,5 +27,5 @@ jobs:
         
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://kuaifan/php:swoole-8.0.rc18 docker://crpi-9t7h1844zav55mmk.cn-beijing.personal.cr.aliyuncs.com/sunfy/kuaifan-php:swoole-8.0.rc18
+         skopeo copy docker://mariadb:10.7.3 docker://crpi-9t7h1844zav55mmk.cn-beijing.personal.cr.aliyuncs.com/sunfy/mariadb:10.7.3
       # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称
