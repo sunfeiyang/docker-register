@@ -27,5 +27,5 @@ jobs:
         
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://nginx:1.26-alpine-perl docker://crpi-9t7h1844zav55mmk.cn-beijing.personal.cr.aliyuncs.com/sunfy/software:nginx-1.26-alpine-perl
+         skopeo copy docker://redis:alpine docker://crpi-9t7h1844zav55mmk.cn-beijing.personal.cr.aliyuncs.com/sunfy/software:redis-alpine
       # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称
