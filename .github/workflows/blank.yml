@@ -27,5 +27,5 @@ jobs:
         
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://portainer/portainer-ce:2.25.1-linux-arm64-alpine docker://crpi-9t7h1844zav55mmk.cn-beijing.personal.cr.aliyuncs.com/sunfy/monitoring:portainer-ce-2.25.1-linux-arm64-alpine
+         skopeo copy docker://mysql:9.4.0 docker://crpi-9t7h1844zav55mmk.cn-beijing.personal.cr.aliyuncs.com/sunfy/software:mysql-9.4.0
       # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称
