@@ -27,5 +27,5 @@ jobs:
         
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://labring/minio:RELEASE.2024-12-18T13-15-44Z-arm64 docker://crpi-9t7h1844zav55mmk.cn-beijing.personal.cr.aliyuncs.com/sunfy/software:labring-minio-RELEASE-2024-12-18T13-15-44Z-arm64
+         skopeo copy docker://cleanstart/minio:0.20250723-arm64 docker://crpi-9t7h1844zav55mmk.cn-beijing.personal.cr.aliyuncs.com/sunfy/software:cleanstart-minio-0-20250723-arm64
       # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称
